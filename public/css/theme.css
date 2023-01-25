@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300&display=swap');
+
+:root {
+    --clr-light: #ffffff;
+    --clr-dark: #071e26;
+    --clr-primary: #a2e5ff;
+    --clr-secondary: #c3f1fc;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ff-title: "Playfair Display", serif;
+    --ff-body: 'Sofia Sans', sans-serif;
+    --ffsize: 18px;
+}
+
+.darkmode {
+    --clr-light: #ffffff;
+    --clr-dark: #071e26;
+    --clr-primary: #abb260;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+.fontSize {
+    --ffsize: 24px;
+}
+
+body {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+
+table {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+table>thead{
+    text-transform: uppercase;
+}
+
+input {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+
+
+.title {
+    font-size: 22pt;
+    margin-bottom: 5em !important;
+    text-transform: uppercase;
+}
+
+.dark-primary-color {
+    background-color: var(--clr-dark);
+}
+

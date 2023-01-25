@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Maven+Pro&display=swap');
+
+:root {
+    --clr-light: #ffffff;
+    --clr-dark: #212e5a;
+    --clr-primary: #a2e5ff;
+    --clr-secondary: #c3f1fc;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ff-title: "Playfair Display", serif;
+    --ff-body: "Assistant", sans-serif;
+    --ffsize: 18px;
+}
+
+.darkmode {
+    --clr-light: #ffffff;
+    --clr-dark: #212e5a;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+}
+
+
+.lightmode-young {
+    --clr-light: #ccffdd;
+    --clr-dark: #2e59b4;
+    --clr-primary: #dbffa2;
+    --clr-secondary: #c3fcf2;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ffsize: 13pt !important;
+    --ff-body: 'Maven Pro', sans-serif;
+}
+
+.darkmode-young {
+    --clr-light: #aef3c5;
+    --clr-dark: #2e59b4;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    --ffsize: 13pt !important;
+    --ff-body: 'Maven Pro', sans-serif;
+}
+
+.lightmode-child {
+    --clr-light: #efccf8;
+    --clr-dark: #7e26b1;
+    --clr-primary: #dbffa2;
+    --clr-secondary: #c3fcf2;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-dark);
+    --background: var(--clr-light);
+
+    --ffsize: 14pt;
+    --ff-body: 'Fredoka One', cursive;
+}
+
+.darkmode-child {
+    --clr-light: #f0d1ed;
+    --clr-dark: #7e26b1;
+    --clr-primary: #202302;
+    --clr-secondary: #00100d;
+    --clr-accent: #ff7750;
+
+    --foreground: var(--clr-light);
+    --background: var(--clr-dark);
+
+    --ffsize: 14pt;
+    --ff-body: 'Fredoka One', cursive;
+}
+
+body {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+table {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+table>thead{
+    text-transform: uppercase;
+}
+
+input {
+    font-size: var(--ffsize) !important;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+}
+
+
+.title {
+    font-size: 22pt;
+    margin-bottom: 5em !important;
+    text-transform: uppercase;
+}
+
+.dark-primary-color {
+    background-color: var(--clr-dark);
+}
+
+
+/* MOFICACION A MATERIALIZE */
+
+/* label color */
+.input-field label {
+    color: #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: #000;
+}
