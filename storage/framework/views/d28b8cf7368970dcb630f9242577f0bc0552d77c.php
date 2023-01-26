@@ -1,9 +1,13 @@
 <?php $__env->startSection('content'); ?>
 
     <div class="row" style="margin-top: 5%">
-        <div class="col s4">
-            <a href="<?php echo e(route('convenio.create')); ?>" class="waves-effect waves-light btn">Registrar</a>
-        </div>
+        <?php if( (auth()->user()->persona->tipo === 'SEC') || (auth()->user()->persona->tipo === 'DIR') || (auth()->user()->persona->tipo === 'COO')): ?>
+            <div class="col s4">
+
+                <a href="<?php echo e(route('convenio.create')); ?>" class="waves-effect waves-light btn">Registrar</a>
+            </div>
+        <?php endif; ?>
+        
         <div class="col s8">
             <span class="right" style="font-size: 20pt">Lista de convenios</span>
         </div>

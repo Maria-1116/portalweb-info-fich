@@ -19,7 +19,7 @@
                             </div>
                             <div class="input-field col s4">
                                 <input id="ruta" type="text" class="validate" name="ruta"  value="{{ $modulo->ruta }}" required>
-                                    <label for="ruta">email</label>
+                                    <label for="ruta">ruta</label>
                                 </div>
                             
                             <div class="input-field col s4">
